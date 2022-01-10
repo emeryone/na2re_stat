@@ -1,0 +1,23 @@
+@startjson
+{
+  "id" : "2946f4b1-000f-5000-9000-1894b027f561",
+  "status" : "pending",
+  "amount" : {
+    "value" : "950.00",
+    "currency" : "RUB"
+  },
+  "recipient" : {
+    "account_id" : "837907",
+    "gateway_id" : "1893056"
+  },
+  "created_at" : "2021-12-11T17:33:37.726Z",
+  "confirmation" : {
+    "type" : "embedded",
+    "confirmation_token" : "ct-2946f4b1-000f-5000-9000-1894b027f561"
+  },
+  "test" : false,
+  "paid" : false,
+  "refundable" : false,
+  "metadata" : { }
+}
+@endjson

@@ -1,0 +1,50 @@
+@startjson
+{
+  "id" : "2946f4b1-000f-5000-9000-1894b027f561",
+  "status" : "succeeded",
+  "amount" : {
+    "value" : "950.00",
+    "currency" : "RUB"
+  },
+  "income_amount" : {
+    "value" : "916.75",
+    "currency" : "RUB"
+  },
+  "recipient" : {
+    "account_id" : "837907",
+    "gateway_id" : "1893056"
+  },
+  "payment_method" : {
+    "type" : "bank_card",
+    "id" : "2946f4b1-000f-5000-9000-1894b027f561",
+    "saved" : false,
+    "title" : "Bank card *4748",
+    "card" : {
+      "first6" : "415042",
+      "last4" : "4748",
+      "expiry_year" : "2024",
+      "expiry_month" : "07",
+      "card_type" : "Visa",
+      "issuer_country" : "RU",
+      "issuer_name" : "Vtb24 (Pjsc)"
+    }
+  },
+  "captured_at" : "2021-12-11T17:34:46.580Z",
+  "created_at" : "2021-12-11T17:33:37.726Z",
+  "test" : false,
+  "refunded_amount" : {
+    "value" : "0.00",
+    "currency" : "RUB"
+  },
+  "paid" : true,
+  "refundable" : true,
+  "metadata" : { },
+  "authorization_details" : {
+    "rrn" : "32952398839",
+    "auth_code" : "GAAAO6",
+    "three_d_secure" : {
+      "applied" : true
+    }
+  }
+}
+@endjson

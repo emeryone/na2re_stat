@@ -1,0 +1,55 @@
+@startuml
+class MainWidget {
+ + buttonStat
+ + buttonHelp
+ + tableWidget
+ - show_detailes()
+ - show_graph()
+ - show_help()
+ - show_table()
+}
+note right of MainWidget::show_detailes()
+ Вызывается по щелчку на строке <b>tableWidget</b>
+end note
+note right of MainWidget::show_graph()
+ Вызывается по нажатию на <b>buttonStat</b>
+end note
+note right of MainWidget::show_help()
+ Вызывается по нажатию на <b>buttonHelp</b>
+end note
+note right of MainWidget::show_table()
+ Вызывается по щелчку на заголовке столбца <b>tableWidget</b>
+end note
+
+class Detailes {
+ - show_dict()
+ - prn_dict()
+}
+note right of Detailes::prn_dict()
+ Визуализатор JSON
+end note
+
+class Graph {
+ + plot
+ + year
+ + month
+ + with_faults
+ - date_changed()
+ - draw_plot()
+}
+note right of Graph::date_changed()
+ Вызывается по изменению
+ <b>year</b>, <b>month</b>, <b>with_faults</b>
+end note
+note right of Graph::draw_plot()
+ Визуализатор диаграммы
+end note
+
+class Help {
+
+}
+
+MainWidget::dialog --> Detailes : Окно Информация о транзакции
+MainWidget::graph --> Graph : Окно Статистика
+MainWidget::help --> Help : Окно Справка
+@enduml

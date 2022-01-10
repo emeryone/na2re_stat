@@ -1,0 +1,3 @@
+@startjson
+{"amount":{"value":"1450","currency":"RUB"},"capture":true,"confirmation":{"type":"embedded","return_url":"https://na2re.ru/payment?id=156843d9-b0da-4e4e-7420-a07abb7965f3","confirmation_token":""},"decsription":"a.m.emelianov@gmail.com"}
+@endjson

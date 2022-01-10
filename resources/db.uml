@@ -1,0 +1,27 @@
+@startuml
+class payments {
+    + id
+    + user
+    + idempotence_id
+    + request_raw
+    + request_time
+    + responce_raw
+    + responce_time
+    + payment_id
+    + confirmation_id
+    + finish_time
+    + finish_raw
+    + book_id
+    + result
+    + download_time
+    + download_count
+}
+
+class items {
+    + id
+    + cost
+    + file
+}
+
+payments::book_id -> items::id : Book
+@enduml
