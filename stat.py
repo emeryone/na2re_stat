@@ -180,7 +180,6 @@ class MainWidget(QMainWindow):
     # Событие: дабл-клик по строке табицы
     @QtCore.pyqtSlot(QtCore.QModelIndex)
     def on_double_click(self, index):
-        print(index.row())
         self.deselect_row()
         self.select_row(index.row())
         self.show_details(self.get_id(index.row()))
@@ -237,7 +236,7 @@ class Graph(QDialog):
         month = self.month.currentIndex()
         result = cur.execute(
             "SELECT request_time, finish_time, download_time, download_count, result \
-            FROM payments ORDER BY request_time").fetchall()
+            FROM payments where strftime('%m', request_time) ORDER BY request_time").fetchall()
         x = []
         y1 = []
         if month == 0:

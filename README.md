@@ -24,3 +24,4 @@
 
 1. Приложение на Python [stat.py](stat.py)
 2. Презантация [YaProject.pdf](YaProject.pdf)
+3. Пояснительная записка [YaDetails.pdf](YaDetails.pdf)
