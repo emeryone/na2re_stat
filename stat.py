@@ -236,7 +236,7 @@ class Graph(QDialog):
         month = self.month.currentIndex()
         result = cur.execute(
             "SELECT request_time, finish_time, download_time, download_count, result \
-            FROM payments where strftime('%m', request_time) ORDER BY request_time").fetchall()
+            FROM payments ORDER BY request_time").fetchall()
         x = []
         y1 = []
         if month == 0:
